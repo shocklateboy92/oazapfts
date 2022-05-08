@@ -1,7 +1,7 @@
 {
-  "name": "oazapfts",
+  "name": "@lasath/oazapfts",
   "version": "3.5.0",
-  "description": "OpenApi TypeScript client generator",
+  "description": "Forked version of @cellular/oazapfts: OpenApi TypeScript client generator",
   "main": "lib/index.js",
   "bin": {
     "oazapfts": "lib/codegen/cli.js"
@@ -21,7 +21,10 @@
   ],
   "author": "Felix Gnass",
   "license": "MIT",
-  "repository": "cellular/oazapfts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cellular/oazapfts.git"
+  },
   "devDependencies": {
     "@jest/types": "^27.0.2",
     "@types/jest": "^27.0.1",
@@ -49,5 +52,13 @@
   },
   "lint-staged": {
     "*.{ts,js,json,md,yml}": "prettier --write"
+  },
+  "types": "./lib/index.d.ts",
+  "bugs": {
+    "url": "https://github.com/cellular/oazapfts/issues"
+  },
+  "homepage": "https://github.com/cellular/oazapfts#readme",
+  "directories": {
+    "lib": "lib"
   }
 }
